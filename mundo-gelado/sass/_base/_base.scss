@@ -10,7 +10,7 @@
   
   body {
     font-family: Nunito;
-    font-size: 16px;
+    font-size: 1,5*$font-size;
   }
   
   ul, li {
@@ -19,7 +19,7 @@
   
   a {
     text-decoration: none;
-    color: $cor-primaria;
+    color: cor(branco);
   }
   
   a:hover {
@@ -39,9 +39,43 @@
     transition: all 1s;
   }
   
+  //Exemplo de IF
+  // .classe-teste {
+  //   @if 3 > 4{
+  //     width: 10px
+  //   }@else{
+  //     width: 50 px;
+  //   }
+  //   width: if(condicao, valor se verdade, valor se falso);
+  //   width: if( 3 > 4, 10px, 50px);
+  // }
   
+  // @for $i from 1 through 5{
+  //   $width: percentage($i/5);
+  //   .col-#{$i} {
+  //     width: $width;
+  //   }
+  // }
   
+  // $i: 1;
+  // $cols: 8;
+
+  // @while $i <= $cols{
+  //   $width: percentage($i/$cols);
+  //   .col-#{$i}{
+  //     width: $width;
+  //   }
+  //   $i: $i + 1;
+  // }
   
-  
-  
-  
+  // @each $nome-da-cor, $cor in $cores{
+  //   .#{$nome-da-cor}{
+  //     color: $cor;
+  //   }
+  // }
+
+  // @each $tipo-da-fonte, $fonte in $fontes{
+  //   .#{tipo-da-fonte}{
+  //     font-family: $fonte;
+  //   }
+  // }

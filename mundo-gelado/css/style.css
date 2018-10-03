@@ -28,7 +28,7 @@ html {
 
 body {
   font-family: Nunito;
-  font-size: 16px;
+  font-size: 1, 50px;
 }
 
 ul, li {
@@ -37,7 +37,7 @@ ul, li {
 
 a {
   text-decoration: none;
-  color: #829dad;
+  color: #FFF;
 }
 
 a:hover {
@@ -145,6 +145,13 @@ a:hover {
   font-weight: 100;
   padding-top: 80px;
   letter-spacing: 8px;
+}
+
+@media screen and (max-width: 980px) {
+  .banner__title {
+    font-size: 60px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 850px) {

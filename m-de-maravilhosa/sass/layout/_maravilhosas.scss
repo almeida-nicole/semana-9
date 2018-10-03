@@ -12,7 +12,8 @@
         flex-wrap: wrap;
         text-align: center;
         color: $cor-primaria;
-        @media (min-width: 768px) {
+        
+        @include responsivo(phone) {
             & > div {
                 max-width: 200px;
                 margin: 5rem;
@@ -38,14 +39,14 @@
                 }
             }
         }
-        @media (min-width: 768px){
+        @include responsivo(phone){
             & p {
                 font-size: 1.5rem;
                 margin-top: 1rem;
             }
         }
     }
-    @media (min-width: 768px) {
+    @include responsivo(phone) {
             padding: 4rem 0;
     }
 
